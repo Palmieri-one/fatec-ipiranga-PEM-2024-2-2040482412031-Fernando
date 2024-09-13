@@ -1,0 +1,110 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36 Avast/127.0.0.0" version="24.7.13">
+  <diagram name="Página-1" id="RKQQPqqXEY1b-9A8Y8yX">
+    <mxGraphModel dx="880" dy="434" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="yyYjtABiMNmZayd5mPgJ-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="yyYjtABiMNmZayd5mPgJ-1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="435" y="180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yyYjtABiMNmZayd5mPgJ-1" value="MODULARIZAÇÃO&lt;div&gt;DO&lt;/div&gt;&lt;div&gt;XEQUE-PASTOR&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="340" y="50" width="190" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="VpRaHCzgamQ_7iIoC4qi-2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="yyYjtABiMNmZayd5mPgJ-3" target="VpRaHCzgamQ_7iIoC4qi-1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yyYjtABiMNmZayd5mPgJ-3" value="&lt;div style=&quot;text-align: left; font-size: 15px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;char linhaPecasPretas[8][4];&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; font-size: 15px;&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;char linhaPretaPeao[8][4];&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; font-size: 15px;&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;char linhaTabuleiro3[8][4];&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; font-size: 15px;&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;char linhaTabuleiro4[8][4];&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; font-size: 15px;&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;char linhaTabuleiro5[8][4];&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; font-size: 15px;&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;char linhaTabuleiro6[8][4];&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 15px;&quot;&gt;char linhaBrancaPeao[8][4];&lt;/span&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; font-size: 15px;&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;char linhaPecasBrancas[8][4];&lt;/font&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="215" y="180" width="440" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="yyYjtABiMNmZayd5mPgJ-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="yyYjtABiMNmZayd5mPgJ-5" target="yyYjtABiMNmZayd5mPgJ-8" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yyYjtABiMNmZayd5mPgJ-5" value="&lt;div style=&quot;text-align: center;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: center;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;CRIAÇÃO DA FUNÇÃO exibirTabuleiro:&lt;/div&gt;&lt;div&gt;void exibirTabuleiro() {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;printf(&quot;&amp;nbsp; &amp;nbsp; &amp;nbsp;a&amp;nbsp; &amp;nbsp;b&amp;nbsp; &amp;nbsp;c&amp;nbsp; &amp;nbsp;d&amp;nbsp; &amp;nbsp;e&amp;nbsp; &amp;nbsp;f&amp;nbsp; &amp;nbsp;g&amp;nbsp; &amp;nbsp;h\n&quot;);&amp;nbsp;&amp;nbsp;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;printf(&quot;&amp;nbsp; &amp;nbsp; --------------------------------\n&quot;);&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;for (int i = 0; i &amp;lt; 8; i++) {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;printf(&quot;%d | &quot;, 8 - i);&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;for (int j = 0; j &amp;lt; 8; j++) {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;printf(&quot;%-4s&quot;, (i == 0 ? linhaPecasPretas[j] :&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;i == 1 ? linhaPretaPeao[j] :&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;i == 2 ? linhaTabuleiro6[j] :&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;i == 3 ? linhaTabuleiro5[j] :&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;i == 4 ? linhaTabuleiro4[j] :&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;i == 5 ? linhaTabuleiro3[j] :&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;i == 6 ? linhaBrancaPeao[j] :&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;linhaPecasBrancas[j]));&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; }&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; printf(&quot;\n&quot;);&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; }&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; printf(&quot;\n&quot;);&lt;/div&gt;&lt;div&gt;}&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;align=left;" parent="1" vertex="1">
+          <mxGeometry x="180" y="560" width="510" height="320" as="geometry" />
+        </mxCell>
+        <mxCell id="yyYjtABiMNmZayd5mPgJ-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="yyYjtABiMNmZayd5mPgJ-8" target="yyYjtABiMNmZayd5mPgJ-10" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yyYjtABiMNmZayd5mPgJ-8" value="CRIAÇÃO DA FUNÇÃO jogadaBranca:&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;void jogadaBranca(char* peca, int origem, int destino) {&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&amp;nbsp; &amp;nbsp; atualizarTabuleiro(peca, origem, destino, linhaBrancaPeao[origem], linhaTabuleiro4[destino]);&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;}&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="180" y="900" width="510" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="yyYjtABiMNmZayd5mPgJ-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="yyYjtABiMNmZayd5mPgJ-10" target="yyYjtABiMNmZayd5mPgJ-12" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yyYjtABiMNmZayd5mPgJ-10" value="CRIAÇÃO DA FUNÇÃO jogadaPreta:&lt;div&gt;&lt;br&gt;&lt;div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;void jogadaPreta(char* peca, int origem, int destino) {&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&amp;nbsp; &amp;nbsp; atualizarTabuleiro(peca, origem, destino, linhaPretaPeao[origem], linhaTabuleiro5[destino]);&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;}&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="180" y="1030" width="510" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="yyYjtABiMNmZayd5mPgJ-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="yyYjtABiMNmZayd5mPgJ-12" target="yyYjtABiMNmZayd5mPgJ-14" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yyYjtABiMNmZayd5mPgJ-12" value="CRIAÇÃO DA FUNÇÃO atualizarTabuleiro:&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;div style=&quot;&quot;&gt;&lt;div style=&quot;text-align: left;&quot;&gt;void atualizarTabuleiro(char* peca, int linha, int coluna, char* vetorOrigem, char* vetorDestino) {&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&amp;nbsp; &amp;nbsp; strcpy(vetorDestino, peca);&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&amp;nbsp; &amp;nbsp; strcpy(vetorOrigem, &quot;...&quot;);&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;}&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="180" y="1140" width="510" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="yyYjtABiMNmZayd5mPgJ-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="yyYjtABiMNmZayd5mPgJ-14" target="yyYjtABiMNmZayd5mPgJ-16" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yyYjtABiMNmZayd5mPgJ-14" value="&lt;div&gt;printf(&quot;TABULEIRO INICIAL\n&quot;);&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; exibirTabuleiro();&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="300" y="1280" width="270" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yyYjtABiMNmZayd5mPgJ-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="yyYjtABiMNmZayd5mPgJ-16" target="yyYjtABiMNmZayd5mPgJ-18" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yyYjtABiMNmZayd5mPgJ-16" value="&lt;div&gt;printf(&quot;\nJOGADA 1 - BRANCO JOGA\n&quot;);&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; jogadaBranca(&quot;BP5&quot;, 4, 4);&amp;nbsp;&amp;nbsp;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; exibirTabuleiro();&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="300" y="1380" width="270" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yyYjtABiMNmZayd5mPgJ-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="yyYjtABiMNmZayd5mPgJ-18" target="yyYjtABiMNmZayd5mPgJ-20" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yyYjtABiMNmZayd5mPgJ-18" value="&lt;div&gt;printf(&quot;\nJOGADA 2 - PRETO JOGA\n&quot;);&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; jogadaPreta(&quot;PP5&quot;, 4, 4);&amp;nbsp;&amp;nbsp;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; exibirTabuleiro();&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="300" y="1480" width="270" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yyYjtABiMNmZayd5mPgJ-26" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="yyYjtABiMNmZayd5mPgJ-20" target="yyYjtABiMNmZayd5mPgJ-25" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yyYjtABiMNmZayd5mPgJ-20" value="&lt;div&gt;&amp;nbsp;printf(&quot;\n JOGADA 3 - BRANCO JOGA\n&quot;);&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; atualizarTabuleiro(&quot;BB2&quot;, 5, 2, linhaPecasBrancas[5], linhaTabuleiro4[2]);&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; exibirTabuleiro();&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="220" y="1569" width="430" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yyYjtABiMNmZayd5mPgJ-28" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="yyYjtABiMNmZayd5mPgJ-25" target="yyYjtABiMNmZayd5mPgJ-27" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yyYjtABiMNmZayd5mPgJ-25" value="&lt;div&gt;printf(&quot;\nJOGADA 4 - PRETO JOGA\n&quot;);&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; atualizarTabuleiro(&quot;PC1&quot;, 1, 2, linhaPecasPretas[1], linhaTabuleiro6[2]);&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; exibirTabuleiro();&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="220" y="1660" width="430" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yyYjtABiMNmZayd5mPgJ-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="yyYjtABiMNmZayd5mPgJ-27" target="yyYjtABiMNmZayd5mPgJ-29" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yyYjtABiMNmZayd5mPgJ-27" value="&lt;div&gt;printf(&quot;\nJOGADA 5 - BRANCO JOGA\n&quot;);&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; atualizarTabuleiro(&quot;BD1&quot;, 3, 7, linhaPecasBrancas[3], linhaTabuleiro5[7]);&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; exibirTabuleiro();&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="220" y="1750" width="430" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yyYjtABiMNmZayd5mPgJ-32" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="yyYjtABiMNmZayd5mPgJ-29" target="yyYjtABiMNmZayd5mPgJ-31" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yyYjtABiMNmZayd5mPgJ-29" value="&lt;div&gt;printf(&quot;\nJOGADA 6 - PRETO JOGA\n&quot;);&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; atualizarTabuleiro(&quot;PC2&quot;, 6, 5, linhaPecasPretas[6], linhaTabuleiro6[5]);&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; exibirTabuleiro();&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="220" y="1840" width="430" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yyYjtABiMNmZayd5mPgJ-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="yyYjtABiMNmZayd5mPgJ-31" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="435.20000000000005" y="2040" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yyYjtABiMNmZayd5mPgJ-31" value="&lt;div&gt;printf(&quot;\nJOGADA 7 - BRANCO JOGA\n&quot;);&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; atualizarTabuleiro(&quot;BD1&quot;, 7, 7, linhaTabuleiro5[7], linhaPretaPeao[5]);&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; exibirTabuleiro();&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="220" y="1930" width="430" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yyYjtABiMNmZayd5mPgJ-36" value="FIM" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="340" y="2040" width="190" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="VpRaHCzgamQ_7iIoC4qi-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="VpRaHCzgamQ_7iIoC4qi-1" target="yyYjtABiMNmZayd5mPgJ-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VpRaHCzgamQ_7iIoC4qi-1" value="&lt;div style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;DEFINIR FUNÇÕES&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;void exibirTabuleiro();&lt;/div&gt;&lt;div&gt;void jogadaBranca(char* peca, int origem, int destino);&lt;/div&gt;&lt;div&gt;void jogadaPreta(char* peca, int origem, int destino);&lt;/div&gt;&lt;div&gt;void atualizarTabuleiro(char* peca, int linha, int coluna, char* vetorOrigem, char* vetorDestino);&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;align=left;" parent="1" vertex="1">
+          <mxGeometry x="180" y="430" width="510" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="v-dfVjRet5d8By02561R-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="yyYjtABiMNmZayd5mPgJ-8" target="yyYjtABiMNmZayd5mPgJ-8" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
