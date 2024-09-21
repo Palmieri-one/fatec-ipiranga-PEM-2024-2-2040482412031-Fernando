@@ -1,0 +1,340 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36" version="24.7.16">
+  <diagram name="Página-1" id="M3oxsOGijg0PNet3tMcv">
+    <mxGraphModel dx="4799" dy="2112" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="YOHwVALVeGbEHIcQHzVy-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="YOHwVALVeGbEHIcQHzVy-1" target="YOHwVALVeGbEHIcQHzVy-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YOHwVALVeGbEHIcQHzVy-1" value="CALCULADORA&lt;div&gt;RPN&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="370" y="50" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="YOHwVALVeGbEHIcQHzVy-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="YOHwVALVeGbEHIcQHzVy-3" target="YOHwVALVeGbEHIcQHzVy-7" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YOHwVALVeGbEHIcQHzVy-3" value="&lt;div&gt;float *ponteiro_pilha; // Aponta para região de memória livre&lt;/div&gt;&lt;div&gt;float *topo_pilha; // Ponteiro para o topo da pilha&lt;/div&gt;&lt;div&gt;float *base_pilha; // Ponteiro para a base da pilha&lt;/div&gt;" style="whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="290" y="160" width="280" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="YOHwVALVeGbEHIcQHzVy-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="YOHwVALVeGbEHIcQHzVy-7" target="YOHwVALVeGbEHIcQHzVy-9" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YOHwVALVeGbEHIcQHzVy-7" value="&lt;div style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;DEFININDO FUNÇÕES DE EMPILHAR E DESEMPILHAR:&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;void empilhar(float valor);&lt;/div&gt;&lt;div&gt;float desempilhar(void);&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="290" y="300" width="280" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="YOHwVALVeGbEHIcQHzVy-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="YOHwVALVeGbEHIcQHzVy-9" target="YOHwVALVeGbEHIcQHzVy-11" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YOHwVALVeGbEHIcQHzVy-9" value="CRIAÇÃO DA FUNÇÃO EMPILHAR:&lt;div&gt;&lt;br&gt;&lt;div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div&gt;void empilhar(float valor) {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; if (ponteiro_pilha &amp;gt; base_pilha) {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; printf(&quot;Erro: Pilha cheia\n&quot;);&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; return;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; }&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; *ponteiro_pilha = valor;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; ponteiro_pilha++;&lt;/div&gt;&lt;div&gt;}&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
+          <mxGeometry x="290" y="430" width="280" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="dM1_wZfciT-uiENROaw8-2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="YOHwVALVeGbEHIcQHzVy-11" target="dM1_wZfciT-uiENROaw8-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YOHwVALVeGbEHIcQHzVy-11" value="CRIAÇÃO DA FUNÇÃO DESEMPILHAR:&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div&gt;float desempilhar(void) {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; if (ponteiro_pilha &amp;lt;= topo_pilha) {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; printf(&quot;Erro: Pilha vazia\n&quot;);&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; return 0.0;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; }&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; ponteiro_pilha--;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; return *ponteiro_pilha;&lt;/div&gt;&lt;div&gt;}&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="290" y="630" width="280" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="YOHwVALVeGbEHIcQHzVy-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="YOHwVALVeGbEHIcQHzVy-13" target="YOHwVALVeGbEHIcQHzVy-16" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YOHwVALVeGbEHIcQHzVy-13" value="DEFININDO VARIÁVEIS PARA OS CÁLCULOS:&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;float operando1, operando2;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&amp;nbsp; &amp;nbsp; char linha_entrada[256]; // Buffer maior para suportar linhas mais longas&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&amp;nbsp;&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="210" y="1400" width="440" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="YOHwVALVeGbEHIcQHzVy-20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="YOHwVALVeGbEHIcQHzVy-16" target="YOHwVALVeGbEHIcQHzVy-19" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YOHwVALVeGbEHIcQHzVy-16" value="ALOCANDO MEMÓRIA PARA A PILHA:&amp;nbsp;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;ponteiro_pilha = (float *) malloc(TAMANHO_MAX_PILHA * sizeof(float));&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="280" y="1590" width="390" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YOHwVALVeGbEHIcQHzVy-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="YOHwVALVeGbEHIcQHzVy-19" target="YOHwVALVeGbEHIcQHzVy-29" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YOHwVALVeGbEHIcQHzVy-19" value="CONSEGUIU ALOCAR&lt;div&gt;MEMÓRIA PARA A&lt;/div&gt;&lt;div&gt;PILHA&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="385" y="1690" width="170" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="YOHwVALVeGbEHIcQHzVy-23" value="VERDADEIRO" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="555" y="1740" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YOHwVALVeGbEHIcQHzVy-24" value="EXIBIR NO CONSOLE:&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;printf(&quot;ERRO DE ALOCAÇÃO DE MEMÓRIA\n&quot;);&lt;br&gt;&lt;/div&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.display;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="115" y="1721.25" width="230" height="107.5" as="geometry" />
+        </mxCell>
+        <mxCell id="YOHwVALVeGbEHIcQHzVy-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="YOHwVALVeGbEHIcQHzVy-19" target="YOHwVALVeGbEHIcQHzVy-24" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YOHwVALVeGbEHIcQHzVy-26" value="FALSO" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="335" y="1748" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YOHwVALVeGbEHIcQHzVy-29" value="&lt;div&gt;topo_pilha = ponteiro_pilha;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; base_pilha = ponteiro_pilha + TAMANHO_MAX_PILHA - 1;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
+          <mxGeometry x="535" y="1840" width="215" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="YOHwVALVeGbEHIcQHzVy-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="YOHwVALVeGbEHIcQHzVy-33" target="YOHwVALVeGbEHIcQHzVy-36" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YOHwVALVeGbEHIcQHzVy-33" value="&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;printf(&quot;Calculadora\n&quot;);&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;printf(&quot;Digite os comandos&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;separados por espaço (digite&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&#39;q&#39; para sair):\n&quot;);&lt;/span&gt;&lt;br&gt;&lt;/div&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.display;whiteSpace=wrap;align=left;" parent="1" vertex="1">
+          <mxGeometry x="485" y="1950" width="250" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="YOHwVALVeGbEHIcQHzVy-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.48;entryY=-0.011;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="YOHwVALVeGbEHIcQHzVy-29" target="YOHwVALVeGbEHIcQHzVy-33" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YOHwVALVeGbEHIcQHzVy-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="YOHwVALVeGbEHIcQHzVy-36" target="YOHwVALVeGbEHIcQHzVy-43" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="465" y="2210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YOHwVALVeGbEHIcQHzVy-36" value="PROGRAMA&amp;nbsp;&lt;div&gt;ENCERRADO?&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="535" y="2110" width="150" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="YOHwVALVeGbEHIcQHzVy-40" value="VERDADEIRO" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="665" y="2148" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YOHwVALVeGbEHIcQHzVy-41" value="FALSO" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="465" y="2148" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YOHwVALVeGbEHIcQHzVy-45" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="YOHwVALVeGbEHIcQHzVy-43" target="YOHwVALVeGbEHIcQHzVy-44" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YOHwVALVeGbEHIcQHzVy-43" value="printf(&quot;: &quot;);" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.display;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="400" y="2220" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YOHwVALVeGbEHIcQHzVy-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="YOHwVALVeGbEHIcQHzVy-44" target="YOHwVALVeGbEHIcQHzVy-50" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YOHwVALVeGbEHIcQHzVy-44" value="&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; if (fgets(s, sizeof(s), stdin) == NULL)" style="rhombus;whiteSpace=wrap;html=1;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="385" y="2310" width="170" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="YOHwVALVeGbEHIcQHzVy-46" value="&amp;nbsp; &amp;nbsp;printf(&quot;Erro na leitura da linha.\n&quot;);" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.display;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="205" y="2450" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="YOHwVALVeGbEHIcQHzVy-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="YOHwVALVeGbEHIcQHzVy-44" target="YOHwVALVeGbEHIcQHzVy-46" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YOHwVALVeGbEHIcQHzVy-48" value="Verdadeiro" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="305" y="2348" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YOHwVALVeGbEHIcQHzVy-55" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="YOHwVALVeGbEHIcQHzVy-50" target="YOHwVALVeGbEHIcQHzVy-54" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YOHwVALVeGbEHIcQHzVy-50" value="s[strcspn(s, &quot;\n&quot;)] = 0;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="545" y="2420" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YOHwVALVeGbEHIcQHzVy-52" value="Falso" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="550" y="2358" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YOHwVALVeGbEHIcQHzVy-57" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="YOHwVALVeGbEHIcQHzVy-54" target="YOHwVALVeGbEHIcQHzVy-56" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YOHwVALVeGbEHIcQHzVy-54" value="char *token = strtok(s, &quot; &quot;);" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="530" y="2510" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YOHwVALVeGbEHIcQHzVy-61" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="YOHwVALVeGbEHIcQHzVy-56" target="YOHwVALVeGbEHIcQHzVy-60" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YOHwVALVeGbEHIcQHzVy-56" value="while token != NULL" style="rhombus;whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="530" y="2600" width="135" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="YOHwVALVeGbEHIcQHzVy-64" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="YOHwVALVeGbEHIcQHzVy-60" target="YOHwVALVeGbEHIcQHzVy-63" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YOHwVALVeGbEHIcQHzVy-68" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="dM1_wZfciT-uiENROaw8-14" target="YOHwVALVeGbEHIcQHzVy-67" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="222" y="2908" />
+              <mxPoint x="-45" y="2908" />
+            </Array>
+            <mxPoint x="175" y="2908.08" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dM1_wZfciT-uiENROaw8-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="YOHwVALVeGbEHIcQHzVy-60" target="dM1_wZfciT-uiENROaw8-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YOHwVALVeGbEHIcQHzVy-60" value="&amp;nbsp; &amp;nbsp; &amp;nbsp;if (strcmp(token, &quot;q&quot;) == 0)" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="655" y="2740" width="120" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="YOHwVALVeGbEHIcQHzVy-62" value="Verdadeiro" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="665" y="2638" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YOHwVALVeGbEHIcQHzVy-63" value="free(p); // Libere a memória alocada" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="752" y="2870" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YOHwVALVeGbEHIcQHzVy-65" value="Verdadeiro" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="765" y="2768" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YOHwVALVeGbEHIcQHzVy-72" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="YOHwVALVeGbEHIcQHzVy-67" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="112.5" y="3053.08" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YOHwVALVeGbEHIcQHzVy-67" value="&lt;div&gt;switch (token[0]) {&lt;/div&gt;&lt;div&gt;case &#39;+&#39;:&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-115" y="2933.08" width="140" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="YOHwVALVeGbEHIcQHzVy-69" value="Falso" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="600" y="2768" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YOHwVALVeGbEHIcQHzVy-70" value="&lt;div style=&quot;text-align: left;&quot;&gt;a = pop();&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;b = pop();&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;printf(&quot;%.2f\n&quot;, b + a);&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;push(b + a);&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;break;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/div&gt;" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="115" y="3016" width="165" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="YOHwVALVeGbEHIcQHzVy-78" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="YOHwVALVeGbEHIcQHzVy-74" target="YOHwVALVeGbEHIcQHzVy-77" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YOHwVALVeGbEHIcQHzVy-74" value="switch (token[0]) {&lt;div&gt;&amp;nbsp;case &#39;-&#39;:&lt;br&gt;&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-245" y="3043.08" width="150" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="YOHwVALVeGbEHIcQHzVy-77" value="&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; a = pop();&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; b = pop();&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; printf(&quot;%.2f\n&quot;, b - a);&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;push(b - a);&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; break;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="-120" y="3193.08" width="165" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="YOHwVALVeGbEHIcQHzVy-87" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="YOHwVALVeGbEHIcQHzVy-81" target="YOHwVALVeGbEHIcQHzVy-84" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YOHwVALVeGbEHIcQHzVy-81" value="switch (token[0]) {&lt;div&gt;&amp;nbsp;case &#39;*&#39;:&lt;br&gt;&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-375" y="3173.08" width="150" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="YOHwVALVeGbEHIcQHzVy-84" value="&lt;div&gt;a = pop();&lt;/div&gt;&lt;div&gt;b = pop();&lt;/div&gt;&lt;div&gt;printf(&quot;%.2f\n&quot;, b * a);&lt;/div&gt;&lt;div&gt;push(b * a);&lt;/div&gt;&lt;div&gt;break;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="-251" y="3323.08" width="176" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="YOHwVALVeGbEHIcQHzVy-89" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="YOHwVALVeGbEHIcQHzVy-85" target="YOHwVALVeGbEHIcQHzVy-88" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YOHwVALVeGbEHIcQHzVy-85" value="switch (token[0]) {&lt;div&gt;case &#39;/&#39;:&lt;br&gt;&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-505" y="3313.08" width="140" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="YOHwVALVeGbEHIcQHzVy-88" value="&lt;div&gt;&amp;nbsp;a = pop();&lt;/div&gt;&lt;div&gt;&amp;nbsp;b = pop();&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;if (a == 0) {&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; printf(&quot;Divisão por 0\n&quot;);&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial; white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: initial; white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;push(b);&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;break;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; }&lt;/div&gt;&lt;div&gt;&amp;nbsp;printf(&quot;%.2f\n&quot;, b / a);&lt;/div&gt;&lt;div&gt;&amp;nbsp;push(b / a);&lt;/div&gt;&lt;div&gt;&amp;nbsp;break;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="-401" y="3463.08" width="366" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="YOHwVALVeGbEHIcQHzVy-93" value="" style="endArrow=none;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-175" y="2913.08" as="sourcePoint" />
+            <mxPoint x="-45" y="2908" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YOHwVALVeGbEHIcQHzVy-94" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" target="YOHwVALVeGbEHIcQHzVy-74" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-175" y="2913.08" as="sourcePoint" />
+            <mxPoint x="-125" y="2943.08" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YOHwVALVeGbEHIcQHzVy-95" value="" style="endArrow=none;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-305" y="2913.08" as="sourcePoint" />
+            <mxPoint x="-175" y="2913.08" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YOHwVALVeGbEHIcQHzVy-96" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" target="YOHwVALVeGbEHIcQHzVy-81" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-305" y="2913.08" as="sourcePoint" />
+            <mxPoint x="-205" y="3003.08" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YOHwVALVeGbEHIcQHzVy-97" value="" style="endArrow=none;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-435" y="2913.08" as="sourcePoint" />
+            <mxPoint x="-305" y="2913.08" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YOHwVALVeGbEHIcQHzVy-98" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" target="YOHwVALVeGbEHIcQHzVy-85" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-435" y="2913.08" as="sourcePoint" />
+            <mxPoint x="-425" y="2913.08" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YOHwVALVeGbEHIcQHzVy-103" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="YOHwVALVeGbEHIcQHzVy-99" target="YOHwVALVeGbEHIcQHzVy-102" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YOHwVALVeGbEHIcQHzVy-105" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="YOHwVALVeGbEHIcQHzVy-99" target="YOHwVALVeGbEHIcQHzVy-104" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YOHwVALVeGbEHIcQHzVy-99" value="switch (token[0]) {&lt;div&gt;case &#39;.&#39;:&lt;br&gt;&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-665" y="3453.08" width="150" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="YOHwVALVeGbEHIcQHzVy-100" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" target="YOHwVALVeGbEHIcQHzVy-99" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-595" y="2913.08" as="sourcePoint" />
+            <mxPoint x="-385" y="3133.08" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YOHwVALVeGbEHIcQHzVy-101" value="" style="endArrow=none;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-595" y="2913.08" as="sourcePoint" />
+            <mxPoint x="-435" y="2913.08" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YOHwVALVeGbEHIcQHzVy-102" value="&lt;div&gt;&amp;nbsp;a = pop();&lt;/div&gt;&lt;div&gt;&amp;nbsp;push(a);&lt;/div&gt;&lt;div&gt;printf(&quot;Valor corrente no topo da pilha: %.2f\n&quot;, a);&lt;/div&gt;&lt;div&gt;break;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="-565" y="3665.08" width="206" height="108" as="geometry" />
+        </mxCell>
+        <mxCell id="YOHwVALVeGbEHIcQHzVy-107" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="YOHwVALVeGbEHIcQHzVy-104" target="YOHwVALVeGbEHIcQHzVy-106" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YOHwVALVeGbEHIcQHzVy-104" value="&lt;div&gt;default:&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; push(atof(token));&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="-795" y="3583.08" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="YOHwVALVeGbEHIcQHzVy-108" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="YOHwVALVeGbEHIcQHzVy-106" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-724.8421052631579" y="3823.08" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YOHwVALVeGbEHIcQHzVy-106" value="&lt;div&gt;// Obtem o próximo token&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; token = strtok(NULL, &quot; &quot;);&lt;/div&gt;" style="whiteSpace=wrap;html=1;align=left;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="-820" y="3703.08" width="190" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="YOHwVALVeGbEHIcQHzVy-109" value="FIM" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-807.5" y="3823.08" width="165" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="YOHwVALVeGbEHIcQHzVy-111" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" target="YOHwVALVeGbEHIcQHzVy-109" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="950" y="3750" as="sourcePoint" />
+            <mxPoint x="145" y="3138" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YOHwVALVeGbEHIcQHzVy-112" value="" style="endArrow=none;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="935" y="2180" as="sourcePoint" />
+            <mxPoint x="945" y="3750" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YOHwVALVeGbEHIcQHzVy-113" value="" style="endArrow=none;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" target="YOHwVALVeGbEHIcQHzVy-36" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="935" y="2180" as="sourcePoint" />
+            <mxPoint x="525" y="2390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dM1_wZfciT-uiENROaw8-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="dM1_wZfciT-uiENROaw8-1" target="dM1_wZfciT-uiENROaw8-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dM1_wZfciT-uiENROaw8-1" value="&lt;div&gt;&amp;nbsp;Criação da Função para verificar o tamanho atual da pilha&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;int tamanho_pilha(void) {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; return ponteiro_pilha - topo_pilha;&lt;/div&gt;&lt;div&gt;}&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="290" y="830" width="280" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="dM1_wZfciT-uiENROaw8-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="dM1_wZfciT-uiENROaw8-3" target="dM1_wZfciT-uiENROaw8-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dM1_wZfciT-uiENROaw8-3" value="&lt;div&gt;Função para verificar se o token é um número&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;int é_numero(char *token) {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; char *ponteiro_final;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; strtod(token, &amp;amp;ponteiro_final);&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; return *ponteiro_final == &#39;\0&#39;;&lt;/div&gt;&lt;div&gt;}&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="290" y="1000" width="280" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="dM1_wZfciT-uiENROaw8-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="dM1_wZfciT-uiENROaw8-5" target="YOHwVALVeGbEHIcQHzVy-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dM1_wZfciT-uiENROaw8-5" value="&lt;div&gt;Função para limpar a pilha&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;void limpar_pilha(void) {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; ponteiro_pilha = topo_pilha; // Reseta o ponteiro ao topo da pilha&lt;/div&gt;&lt;div&gt;}&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="290" y="1200" width="280" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="dM1_wZfciT-uiENROaw8-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="dM1_wZfciT-uiENROaw8-8" target="dM1_wZfciT-uiENROaw8-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dM1_wZfciT-uiENROaw8-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="dM1_wZfciT-uiENROaw8-8" target="dM1_wZfciT-uiENROaw8-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dM1_wZfciT-uiENROaw8-8" value="if (tamanho_pilha() &gt;= TAMANHO_MAX_PILHA)" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="450" y="2830" width="175" height="162" as="geometry" />
+        </mxCell>
+        <mxCell id="dM1_wZfciT-uiENROaw8-10" value="&lt;div&gt;printf(&quot;Erro: Muitos números na memória\n&quot;);&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; erro_ocorreu = 1;&amp;nbsp; // Marca que houve erro de limite&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; limpar_pilha();&amp;nbsp; // Limpa a pilha após o erro&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; break;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="625" y="2970" width="260" height="108" as="geometry" />
+        </mxCell>
+        <mxCell id="dM1_wZfciT-uiENROaw8-13" value="Verdadeiro" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="610" y="2878" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dM1_wZfciT-uiENROaw8-14" value="empilhar(atof(token)); // Empilha apenas números" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="222.5" y="2881" width="167.5" height="79" as="geometry" />
+        </mxCell>
+        <mxCell id="dM1_wZfciT-uiENROaw8-16" value="Falso" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="405" y="2881" width="50" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
