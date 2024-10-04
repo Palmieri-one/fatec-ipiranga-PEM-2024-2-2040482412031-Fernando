@@ -1,0 +1,60 @@
+1. Otimização de Paradas Antecipadas:
+Atualmente, o código percorre todas as iterações mesmo quando o array já está ordenado. Podemos adicionar uma verificação para interromper o loop caso o array já esteja ordenado antes de completar todas as passadas.
+
+void bubbleSort(int arr[], int n) {
+    int i, j, temp;
+    int trocado;
+    for (i = 0; i < n-1; i++) {
+        trocado = 0;  // Verifica se houve troca
+        for (j = 0; j < n-i-1; j++) {
+            if (arr[j] > arr[j+1]) {
+                // Troca os elementos
+                temp = arr[j];
+                arr[j] = arr[j+1];
+                arr[j+1] = temp;
+                trocado = 1;  // Houve troca
+            }
+        }
+        // Se não houve trocas, o array já está ordenado
+        if (trocado == 0)
+            break;
+    }
+}
+2. Melhoria nos Nomes de Variáveis:
+De acordo com seu estilo preferido de nomear variáveis de forma significativa, podemos alterar os nomes para torná-los mais claros:
+
+void ordenarBubble(int vetor[], int tamanho) {
+    int indiceExterno, indiceInterno, temporario;
+    int houveTroca;
+    for (indiceExterno = 0; indiceExterno < tamanho-1; indiceExterno++) {
+        houveTroca = 0;
+        for (indiceInterno = 0; indiceInterno < tamanho-indiceExterno-1; indiceInterno++) {
+            if (vetor[indiceInterno] > vetor[indiceInterno+1]) {
+                temporario = vetor[indiceInterno];
+                vetor[indiceInterno] = vetor[indiceInterno+1];
+                vetor[indiceInterno+1] = temporario;
+                houveTroca = 1;
+            }
+        }
+        if (houveTroca == 0)
+            break;
+    }
+}
+3. Separar Funções de Entrada de Dados:
+Em vez de deixar o array fixo no código, seria interessante criar uma função para permitir que o usuário insira os valores do array:
+void inserirDados(int arr[], int tamanho) {
+    printf("Digite %d números:\n", tamanho);
+    for (int i = 0; i < tamanho; i++) {
+        scanf("%d", &arr[i]);
+    }
+}
+
+4. Melhorar a Função de Impressão:
+Para tornar a saída mais informativa, a função de impressão pode ser melhorada, adicionando contexto à saída.
+void imprimirArray(int arr[], int tamanho) {
+    printf("Elementos do array: ");
+    for (int i = 0; i < tamanho; i++) {
+        printf("%d ", arr[i]);
+    }
+    printf("\n");
+}
